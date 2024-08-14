@@ -1,0 +1,361 @@
+/* styles.css */
+
+/* Variables de colores */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: rgba(0, 0, 0, 0.7);
+    --nav-bg-color: rgba(0, 0, 0, 0.8);
+    --footer-bg-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: var(--primary-color);
+    background: url('Img1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Menú de navegación */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido */
+.content {
+    margin-top: 80px; /* Espacio para el menú fijo */
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.title-overlay {
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 45px;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  width: 450px;
+  height: 800px;
+  text-align: center;
+  background: #000000;
+  background: linear-gradient(20deg, #000000c1, #ffffff, #ffffffd5);
+}
+
+.title-overlay h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 3.5em;
+    height: 800px;
+    background: #ffffff;
+    background: linear-gradient(80deg, #400303,#c00505,#ff0000,#570101);
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+/* Secciones */
+.section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin: 20px 0;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    padding: 10px 0;
+    color: var(--primary-color);
+    height: 150px;
+}
+.contenedorP{
+    background-color: #000000ec;
+}
+p{
+    margin: 0;
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  background: #ffffff;
+  background: linear-gradient(50deg,#824902, #824902, #c26f09,#c26f09, #e1c3a4, #c26f09,#c26f09,#814700, #623602);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+h2{
+    font-size: 50px;
+    margin: 0;
+
+}
+h3{
+    text-align: center;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+.galeria {
+    display: flex;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Permite desplazamiento suave */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en iOS */
+  }
+  
+  .imagen {
+    flex: 0 0 auto; /* Hace que las imágenes no crezcan o se reduzcan */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    scroll-snap-align: start; /* Alinea las imágenes al inicio del contenedor */
+  }
+  
+  .imagen img {
+    max-width: 800px; /* Imágenes no más anchas que el contenedor */
+    height: 600px; /* Mantiene la proporción de la imagen */
+  }
+  
+
+  
+  .contenido {
+    padding: 20px;
+  }
+  
+  .video-container {
+    margin: 20px 0;
+  }
+  
+
+
+
+  
+  .galeria {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .video-container {
+    flex: 0 0 auto;
+    margin-right: 100px;
+    scroll-snap-align: start;
+  }
+  
+  .video-container video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-container video:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .galeriaVi {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .video-containers {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    scroll-snap-align: start;
+  }
+  
+  .video-containers video {
+    max-width: 100%;
+    width: 1000px;
+    height: 1100px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-containers video:hover {
+    transform: scale(1.05);
+  }
+  
+
+
+
+  
+  
+  .galeria1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .imagenes3 {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .imagenes3 img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+
+  .galeria10 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .imagenes30 {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .imagenes30 img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+
+  #Logo{
+	width: 230px;
+	height: 130px;
+	left: 1200px;
+	top: 25px;
+	position: absolute;
+	margin-bottom:20px;
+	 margin: 25px auto;
+
+}
+#Esc{
+    width: 300px;
+	height: 300px;
+    margin: 0;
+}
+
+#Logo2{
+    width: 350px;
+	height: 150px;
+	left: 50px;	
+	position: relative;
+
+}
+#Logo3{
+    width: 150px;
+	height: 150px;
+	left: 1300px;
+    position: absolute;
+}
+
+.title-overlay1 {
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 45px;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+.title-overlay1 h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 3.0em;
+    height: 120px;
+    background: #ffffff;
+    background: linear-gradient(80deg, #400303,#c00505,#ff0000,#570101);
+    font-family: "Orbitron", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+
+h4{
+    color: var(--primary-color);
+    font-size: 1.5em;
+    background: linear-gradient(80deg, #000000,#080808,#400101,#000000);
+    font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.title-overlay2 {
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 45px;
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+.title-overlay2 h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 3.0em;
+    background: linear-gradient(80deg, #400303,#c00505,#ff0000,#570101);
+    font-family: "Orbitron", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
